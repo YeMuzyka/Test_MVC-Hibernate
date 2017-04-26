@@ -1,0 +1,172 @@
+09:36:03,650 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.servlet.mvc.method.annotation.MatrixVariableMethodArgumentResolver@11e1bd7] supports [interface org.springframework.ui.Model]
+09:36:03,651 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.servlet.mvc.method.annotation.MatrixVariableMapMethodArgumentResolver@ff79e1] supports [interface org.springframework.ui.Model]
+09:36:03,651 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor@12677a5] supports [interface org.springframework.ui.Model]
+09:36:03,652 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor@1358b36] supports [interface org.springframework.ui.Model]
+09:36:03,653 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver@1f92a08] supports [interface org.springframework.ui.Model]
+09:36:03,653 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.method.annotation.RequestHeaderMethodArgumentResolver@135aed9] supports [interface org.springframework.ui.Model]
+09:36:03,654 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.method.annotation.RequestHeaderMapMethodArgumentResolver@44a776] supports [interface org.springframework.ui.Model]
+09:36:03,655 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.servlet.mvc.method.annotation.ServletCookieValueMethodArgumentResolver@605c75] supports [interface org.springframework.ui.Model]
+09:36:03,655 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.method.annotation.ExpressionValueMethodArgumentResolver@1f808fe] supports [interface org.springframework.ui.Model]
+09:36:03,656 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.servlet.mvc.method.annotation.SessionAttributeMethodArgumentResolver@199b8ab] supports [interface org.springframework.ui.Model]
+09:36:03,656 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.servlet.mvc.method.annotation.RequestAttributeMethodArgumentResolver@109a520] supports [interface org.springframework.ui.Model]
+09:36:03,657 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolver@11bfd02] supports [interface org.springframework.ui.Model]
+09:36:03,657 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.servlet.mvc.method.annotation.ServletResponseMethodArgumentResolver@80dd2c] supports [interface org.springframework.ui.Model]
+09:36:03,658 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor@6dc2ab] supports [interface org.springframework.ui.Model]
+09:36:03,658 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.servlet.mvc.method.annotation.RedirectAttributesMethodArgumentResolver@131833a] supports [interface org.springframework.ui.Model]
+09:36:03,661 [TRACE] HandlerMethodArgumentResolverComposite.getArgumentResolver:132 - Testing if argument resolver [org.springframework.web.method.annotation.ModelMethodProcessor@165cf82] supports [interface org.springframework.ui.Model]
+09:36:03,664 [TRACE] ServletInvocableHandlerMethod.invokeForRequest:130 - Invoking 'ru.kle10wka.controller.ControllerMain.delete' with arguments [4, {}]
+09:36:03,665 [DEBUG] HibernateTransactionManager.getTransaction:367 - Creating new transaction with name [ru.kle10wka.service.BookService.delete]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+09:36:03,666 [DEBUG] HibernateTransactionManager.doBegin:436 - Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+09:36:03,667 [DEBUG] HibernateTransactionManager.doBegin:446 - Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])]
+09:36:03,667 [DEBUG] TransactionImpl.begin:55 - begin
+09:36:03,668 [DEBUG] HibernateTransactionManager.doBegin:514 - Exposing Hibernate transaction as JDBC transaction [ProxyConnection[PooledConnection[org.postgresql.jdbc4.Jdbc4Connection@1fd953a]]]
+09:36:03,671 [TRACE] TransactionSynchronizationManager.bindResource:193 - Bound value [org.springframework.jdbc.datasource.ConnectionHolder@c7f1b1] for key [org.apache.tomcat.jdbc.pool.DataSource@2a4589{ConnectionPool[defaultAutoCommit=null; defaultReadOnly=null; defaultTransactionIsolation=-1; defaultCatalog=null; driverClassName=org.postgresql.Driver; maxActive=10; maxIdle=5; minIdle=2; initialSize=5; maxWait=30000; testOnBorrow=false; testOnReturn=false; timeBetweenEvictionRunsMillis=5000; numTestsPerEvictionRun=0; minEvictableIdleTimeMillis=60000; testWhileIdle=false; testOnConnect=false; password=********; url=jdbc:postgresql://127.0.0.1:5432/Test_Hibernate_FULL; username=Test; validationQuery=null; validationQueryTimeout=-1; validatorClassName=null; validationInterval=3000; accessToUnderlyingConnectionAllowed=true; removeAbandoned=false; removeAbandonedTimeout=60; logAbandoned=false; connectionProperties=null; initSQL=null; jdbcInterceptors=null; jmxEnabled=true; fairQueue=true; useEquals=true; abandonWhenPercentageFull=0; maxAge=0; useLock=false; dataSource=null; dataSourceJNDI=null; suspectTimeout=0; alternateUsernameAllowed=false; commitOnReturn=false; rollbackOnReturn=false; useDisposableConnectionFacade=true; logValidationErrors=false; propagateInterruptState=false; ignoreExceptionOnPreLoad=false; }] to thread [http-nio-8080-exec-4]
+09:36:03,671 [TRACE] TransactionSynchronizationManager.bindResource:193 - Bound value [org.springframework.orm.hibernate5.SessionHolder@10ed85a] for key [org.hibernate.internal.SessionFactoryImpl@13b47eb] to thread [http-nio-8080-exec-4]
+09:36:03,672 [TRACE] TransactionSynchronizationManager.initSynchronization:272 - Initializing transaction synchronization
+09:36:03,673 [TRACE] TransactionInterceptor.prepareTransactionInfo:474 - Getting transaction for [ru.kle10wka.service.BookService.delete]
+09:36:03,674 [TRACE] TransactionSynchronizationManager.getResource:140 - Retrieved value [org.springframework.orm.hibernate5.SessionHolder@10ed85a] for key [org.hibernate.internal.SessionFactoryImpl@13b47eb] bound to thread [http-nio-8080-exec-4]
+09:36:03,811 [DEBUG] SQL.logStatement:92 - 
+    select
+        book0_.id as id1_0_0_,
+        book0_.genre as genre2_0_0_,
+        book0_.name as name3_0_0_,
+        book0_.pages as pages4_0_0_ 
+    from
+        book book0_ 
+    where
+        book0_.id=?
+09:36:03,936 [DEBUG] ResultSetProcessorImpl.extractResults:120 - Starting ResultSet row #0
+09:36:03,939 [DEBUG] EntityReferenceInitializerImpl.resolveEntityKey:126 - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+09:36:03,950 [DEBUG] TwoPhaseLoad.doInitializeEntity:141 - Resolving associations for [ru.kle10wka.table.Book#4]
+09:36:03,953 [DEBUG] TwoPhaseLoad.doInitializeEntity:281 - Done materializing entity [ru.kle10wka.table.Book#4]
+09:36:03,954 [DEBUG] ResourceRegistryStandardImpl.release:73 - HHH000387: ResultSet's statement was not registered
+09:36:03,955 [DEBUG] AbstractLoadPlanBasedEntityLoader.load:189 - Done entity load : ru.kle10wka.table.Book#4
+09:36:03,985 [TRACE] TransactionInterceptor.commitTransactionAfterReturning:502 - Completing transaction for [ru.kle10wka.service.BookService.delete]
+09:36:03,985 [TRACE] HibernateTransactionManager.triggerBeforeCommit:930 - Triggering beforeCommit synchronization
+09:36:03,986 [TRACE] HibernateTransactionManager.triggerBeforeCompletion:943 - Triggering beforeCompletion synchronization
+09:36:03,987 [DEBUG] HibernateTransactionManager.processCommit:759 - Initiating transaction commit
+09:36:03,987 [DEBUG] HibernateTransactionManager.doCommit:578 - Committing Hibernate transaction on Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[ru.kle10wka.table.Book#4]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=1} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])]
+09:36:03,988 [DEBUG] TransactionImpl.commit:66 - committing
+09:36:03,989 [DEBUG] AbstractFlushingEventListener.prepareEntityFlushes:132 - Processing flush-time cascades
+09:36:03,990 [DEBUG] AbstractFlushingEventListener.prepareCollectionFlushes:174 - Dirty checking collections
+09:36:03,991 [DEBUG] AbstractFlushingEventListener.logFlushResults:106 - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+09:36:03,992 [DEBUG] AbstractFlushingEventListener.logFlushResults:113 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+09:36:03,992 [DEBUG] EntityPrinter.toString:102 - Listing entities:
+09:36:03,993 [DEBUG] EntityPrinter.toString:109 - ru.kle10wka.table.Book{pages=1337, genre=pidor, name=work, id=4}
+09:36:03,994 [DEBUG] SQL.logStatement:92 - 
+    delete 
+    from
+        book 
+    where
+        id=?
+09:36:04,089 [TRACE] HibernateTransactionManager.triggerAfterCommit:956 - Triggering afterCommit synchronization
+09:36:04,090 [TRACE] TransactionSynchronizationManager.clearSynchronization:331 - Clearing transaction synchronization
+09:36:04,093 [TRACE] HibernateTransactionManager.triggerAfterCompletion:973 - Triggering afterCompletion synchronization
+09:36:04,093 [TRACE] TransactionSynchronizationManager.doUnbindResource:243 - Removed value [org.springframework.orm.hibernate5.SessionHolder@10ed85a] for key [org.hibernate.internal.SessionFactoryImpl@13b47eb] from thread [http-nio-8080-exec-4]
+09:36:04,096 [TRACE] TransactionSynchronizationManager.doUnbindResource:243 - Removed value [org.springframework.jdbc.datasource.ConnectionHolder@c7f1b1] for key [org.apache.tomcat.jdbc.pool.DataSource@2a4589{ConnectionPool[defaultAutoCommit=null; defaultReadOnly=null; defaultTransactionIsolation=-1; defaultCatalog=null; driverClassName=org.postgresql.Driver; maxActive=10; maxIdle=5; minIdle=2; initialSize=5; maxWait=30000; testOnBorrow=false; testOnReturn=false; timeBetweenEvictionRunsMillis=5000; numTestsPerEvictionRun=0; minEvictableIdleTimeMillis=60000; testWhileIdle=false; testOnConnect=false; password=********; url=jdbc:postgresql://127.0.0.1:5432/Test_Hibernate_FULL; username=Test; validationQuery=null; validationQueryTimeout=-1; validatorClassName=null; validationInterval=3000; accessToUnderlyingConnectionAllowed=true; removeAbandoned=false; removeAbandonedTimeout=60; logAbandoned=false; connectionProperties=null; initSQL=null; jdbcInterceptors=null; jmxEnabled=true; fairQueue=true; useEquals=true; abandonWhenPercentageFull=0; maxAge=0; useLock=false; dataSource=null; dataSourceJNDI=null; suspectTimeout=0; alternateUsernameAllowed=false; commitOnReturn=false; rollbackOnReturn=false; useDisposableConnectionFacade=true; logValidationErrors=false; propagateInterruptState=false; ignoreExceptionOnPreLoad=false; }] from thread [http-nio-8080-exec-4]
+09:36:04,096 [DEBUG] HibernateTransactionManager.doCleanupAfterCompletion:680 - Closing Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] after transaction
+09:36:04,098 [INFO] StatisticalLoggingSessionEventListener.end:258 - Session Metrics {
+    83834 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    290852 nanoseconds spent preparing 2 JDBC statements;
+    85966309 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    98839670 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+09:36:04,098 [DEBUG] JdbcCoordinatorImpl.close:177 - HHH000420: Closing un-released batch
+09:36:04,099 [TRACE] ServletInvocableHandlerMethod.invokeForRequest:135 - Method [ru.kle10wka.controller.ControllerMain.delete] returned [deletedpage]
+09:36:04,103 [DEBUG] DefaultListableBeanFactory.invokeInitMethods:1670 - Invoking afterPropertiesSet() on bean with name 'deletedpage'
+09:36:04,104 [DEBUG] DefaultListableBeanFactory.doGetBean:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+09:36:04,105 [TRACE] UrlBasedViewResolver.resolveViewName:164 - Cached view [deletedpage]
+09:36:04,106 [DEBUG] DispatcherServlet.render:1276 - Rendering view [org.springframework.web.servlet.view.JstlView: name 'deletedpage'; URL [/WEB-INF/deletedpage.jsp]] in DispatcherServlet with name 'mvc'
+09:36:04,106 [TRACE] JstlView.render:297 - Rendering view with name 'deletedpage' with model {id=4} and static attributes {}
+09:36:04,107 [DEBUG] JstlView.exposeModelAsRequestAttributes:432 - Added model object 'id' of type [java.lang.Integer] to request in view with name 'deletedpage'
+09:36:04,115 [DEBUG] JstlView.renderMergedOutputModel:166 - Forwarding to resource [/WEB-INF/deletedpage.jsp] in InternalResourceView 'deletedpage'
+09:36:16,921 [TRACE] DispatcherServlet.resetContextHolders:1062 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@5c8fce
+09:36:16,922 [DEBUG] DispatcherServlet.processRequest:1000 - Successfully completed request
+09:36:16,922 [TRACE] XmlWebApplicationContext.publishEvent:363 - Publishing event in WebApplicationContext for namespace 'mvc-servlet': ServletRequestHandledEvent: url=[/SpringMVC_Hibernate/books/delete]; client=[0:0:0:0:0:0:0:1]; method=[GET]; servlet=[mvc]; session=[BA9930F1AE43ABC9B7B31EEE6387CB96]; user=[null]; time=[13364ms]; status=[OK]
+09:36:19,183 [TRACE] DispatcherServlet.initContextHolders:1052 - Bound request context to thread: org.apache.catalina.connector.RequestFacade@5c8fce
+09:36:19,185 [DEBUG] DispatcherServlet.doService:865 - DispatcherServlet with name 'mvc' processing GET request for [/SpringMVC_Hibernate/books]
+09:36:19,186 [TRACE] DispatcherServlet.getHandler:1153 - Testing handler map [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping@e65a05] in DispatcherServlet with name 'mvc'
+09:36:19,187 [DEBUG] RequestMappingHandlerMapping.getHandlerInternal:310 - Looking up handler method for path /books
+09:36:19,188 [TRACE] RequestMappingHandlerMapping.lookupHandlerMethod:354 - Found 1 matching mapping(s) for [/books] : [{[/books],methods=[GET]}]
+09:36:19,188 [DEBUG] RequestMappingHandlerMapping.getHandlerInternal:317 - Returning handler method [public java.lang.String ru.kle10wka.controller.ControllerMain.allList(org.springframework.ui.Model)]
+09:36:19,189 [DEBUG] DefaultListableBeanFactory.doGetBean:251 - Returning cached instance of singleton bean 'controllerMain'
+09:36:19,190 [TRACE] DispatcherServlet.getHandlerAdapter:1192 - Testing handler adapter [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter@17cfaa1]
+09:36:19,190 [DEBUG] DispatcherServlet.doDispatch:951 - Last-Modified value for [/SpringMVC_Hibernate/books] is: -1
+09:36:19,191 [TRACE] ServletInvocableHandlerMethod.invokeForRequest:130 - Invoking 'ru.kle10wka.controller.ControllerMain.allList' with arguments [{}]
+09:36:19,192 [DEBUG] HibernateTransactionManager.getTransaction:367 - Creating new transaction with name [ru.kle10wka.service.BookService.getAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+09:36:19,193 [DEBUG] HibernateTransactionManager.doBegin:436 - Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+09:36:19,194 [DEBUG] HibernateTransactionManager.doBegin:446 - Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])]
+09:36:19,195 [DEBUG] TransactionImpl.begin:55 - begin
+09:36:19,196 [DEBUG] HibernateTransactionManager.doBegin:514 - Exposing Hibernate transaction as JDBC transaction [ProxyConnection[PooledConnection[org.postgresql.jdbc4.Jdbc4Connection@1fd953a]]]
+09:36:19,198 [TRACE] TransactionSynchronizationManager.bindResource:193 - Bound value [org.springframework.jdbc.datasource.ConnectionHolder@b9191] for key [org.apache.tomcat.jdbc.pool.DataSource@2a4589{ConnectionPool[defaultAutoCommit=null; defaultReadOnly=null; defaultTransactionIsolation=-1; defaultCatalog=null; driverClassName=org.postgresql.Driver; maxActive=10; maxIdle=5; minIdle=2; initialSize=5; maxWait=30000; testOnBorrow=false; testOnReturn=false; timeBetweenEvictionRunsMillis=5000; numTestsPerEvictionRun=0; minEvictableIdleTimeMillis=60000; testWhileIdle=false; testOnConnect=false; password=********; url=jdbc:postgresql://127.0.0.1:5432/Test_Hibernate_FULL; username=Test; validationQuery=null; validationQueryTimeout=-1; validatorClassName=null; validationInterval=3000; accessToUnderlyingConnectionAllowed=true; removeAbandoned=false; removeAbandonedTimeout=60; logAbandoned=false; connectionProperties=null; initSQL=null; jdbcInterceptors=null; jmxEnabled=true; fairQueue=true; useEquals=true; abandonWhenPercentageFull=0; maxAge=0; useLock=false; dataSource=null; dataSourceJNDI=null; suspectTimeout=0; alternateUsernameAllowed=false; commitOnReturn=false; rollbackOnReturn=false; useDisposableConnectionFacade=true; logValidationErrors=false; propagateInterruptState=false; ignoreExceptionOnPreLoad=false; }] to thread [http-nio-8080-exec-5]
+09:36:19,234 [TRACE] TransactionSynchronizationManager.bindResource:193 - Bound value [org.springframework.orm.hibernate5.SessionHolder@17e9e70] for key [org.hibernate.internal.SessionFactoryImpl@13b47eb] to thread [http-nio-8080-exec-5]
+09:36:19,235 [TRACE] TransactionSynchronizationManager.initSynchronization:272 - Initializing transaction synchronization
+09:36:19,236 [TRACE] TransactionInterceptor.prepareTransactionInfo:474 - Getting transaction for [ru.kle10wka.service.BookService.getAll]
+09:36:19,236 [TRACE] TransactionSynchronizationManager.getResource:140 - Retrieved value [org.springframework.orm.hibernate5.SessionHolder@17e9e70] for key [org.hibernate.internal.SessionFactoryImpl@13b47eb] bound to thread [http-nio-8080-exec-5]
+09:36:19,238 [DEBUG] SQL.logStatement:92 - 
+    select
+        book0_.id as id1_0_,
+        book0_.genre as genre2_0_,
+        book0_.name as name3_0_,
+        book0_.pages as pages4_0_ 
+    from
+        book book0_
+09:36:19,259 [DEBUG] Loader.debugf:384 - Result set row: 0
+09:36:19,260 [DEBUG] Loader.getRow:1527 - Result row: EntityKey[ru.kle10wka.table.Book#1]
+09:36:19,261 [DEBUG] Loader.debugf:384 - Result set row: 1
+09:36:19,262 [DEBUG] Loader.getRow:1527 - Result row: EntityKey[ru.kle10wka.table.Book#2]
+09:36:19,263 [DEBUG] Loader.debugf:384 - Result set row: 2
+09:36:19,277 [DEBUG] Loader.getRow:1527 - Result row: EntityKey[ru.kle10wka.table.Book#3]
+09:36:19,281 [DEBUG] TwoPhaseLoad.doInitializeEntity:141 - Resolving associations for [ru.kle10wka.table.Book#1]
+09:36:19,282 [DEBUG] TwoPhaseLoad.doInitializeEntity:281 - Done materializing entity [ru.kle10wka.table.Book#1]
+09:36:19,284 [DEBUG] TwoPhaseLoad.doInitializeEntity:141 - Resolving associations for [ru.kle10wka.table.Book#2]
+09:36:19,285 [DEBUG] TwoPhaseLoad.doInitializeEntity:281 - Done materializing entity [ru.kle10wka.table.Book#2]
+09:36:19,286 [DEBUG] TwoPhaseLoad.doInitializeEntity:141 - Resolving associations for [ru.kle10wka.table.Book#3]
+09:36:19,287 [DEBUG] TwoPhaseLoad.doInitializeEntity:281 - Done materializing entity [ru.kle10wka.table.Book#3]
+09:36:19,288 [DEBUG] ConcurrentStatisticsImpl.queryExecuted:387 - HHH000117: HQL: FROM Book, time: 50ms, rows: 3
+09:36:19,302 [TRACE] TransactionInterceptor.commitTransactionAfterReturning:502 - Completing transaction for [ru.kle10wka.service.BookService.getAll]
+09:36:19,303 [TRACE] HibernateTransactionManager.triggerBeforeCommit:930 - Triggering beforeCommit synchronization
+09:36:19,304 [TRACE] HibernateTransactionManager.triggerBeforeCompletion:943 - Triggering beforeCompletion synchronization
+09:36:19,304 [DEBUG] HibernateTransactionManager.processCommit:759 - Initiating transaction commit
+09:36:19,305 [DEBUG] HibernateTransactionManager.doCommit:578 - Committing Hibernate transaction on Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[ru.kle10wka.table.Book#1], EntityKey[ru.kle10wka.table.Book#2], EntityKey[ru.kle10wka.table.Book#3]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])]
+09:36:19,305 [DEBUG] TransactionImpl.commit:66 - committing
+09:36:19,306 [DEBUG] AbstractFlushingEventListener.prepareEntityFlushes:132 - Processing flush-time cascades
+09:36:19,307 [DEBUG] AbstractFlushingEventListener.prepareCollectionFlushes:174 - Dirty checking collections
+09:36:19,308 [DEBUG] AbstractFlushingEventListener.logFlushResults:106 - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+09:36:19,309 [DEBUG] AbstractFlushingEventListener.logFlushResults:113 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+09:36:19,309 [DEBUG] EntityPrinter.toString:102 - Listing entities:
+09:36:19,310 [DEBUG] EntityPrinter.toString:109 - ru.kle10wka.table.Book{pages=666, genre=Fairytale, name=Bible, id=1}
+09:36:19,311 [DEBUG] EntityPrinter.toString:109 - ru.kle10wka.table.Book{pages=1488, genre=Horror, name=Java Book, id=2}
+09:36:19,312 [DEBUG] EntityPrinter.toString:109 - ru.kle10wka.table.Book{pages=228, genre=Fantasy, name=Constitution of Ukraine, id=3}
+09:36:19,315 [TRACE] HibernateTransactionManager.triggerAfterCommit:956 - Triggering afterCommit synchronization
+09:36:19,316 [TRACE] TransactionSynchronizationManager.clearSynchronization:331 - Clearing transaction synchronization
+09:36:19,319 [TRACE] HibernateTransactionManager.triggerAfterCompletion:973 - Triggering afterCompletion synchronization
+09:36:19,320 [TRACE] TransactionSynchronizationManager.doUnbindResource:243 - Removed value [org.springframework.orm.hibernate5.SessionHolder@17e9e70] for key [org.hibernate.internal.SessionFactoryImpl@13b47eb] from thread [http-nio-8080-exec-5]
+09:36:19,322 [TRACE] TransactionSynchronizationManager.doUnbindResource:243 - Removed value [org.springframework.jdbc.datasource.ConnectionHolder@b9191] for key [org.apache.tomcat.jdbc.pool.DataSource@2a4589{ConnectionPool[defaultAutoCommit=null; defaultReadOnly=null; defaultTransactionIsolation=-1; defaultCatalog=null; driverClassName=org.postgresql.Driver; maxActive=10; maxIdle=5; minIdle=2; initialSize=5; maxWait=30000; testOnBorrow=false; testOnReturn=false; timeBetweenEvictionRunsMillis=5000; numTestsPerEvictionRun=0; minEvictableIdleTimeMillis=60000; testWhileIdle=false; testOnConnect=false; password=********; url=jdbc:postgresql://127.0.0.1:5432/Test_Hibernate_FULL; username=Test; validationQuery=null; validationQueryTimeout=-1; validatorClassName=null; validationInterval=3000; accessToUnderlyingConnectionAllowed=true; removeAbandoned=false; removeAbandonedTimeout=60; logAbandoned=false; connectionProperties=null; initSQL=null; jdbcInterceptors=null; jmxEnabled=true; fairQueue=true; useEquals=true; abandonWhenPercentageFull=0; maxAge=0; useLock=false; dataSource=null; dataSourceJNDI=null; suspectTimeout=0; alternateUsernameAllowed=false; commitOnReturn=false; rollbackOnReturn=false; useDisposableConnectionFacade=true; logValidationErrors=false; propagateInterruptState=false; ignoreExceptionOnPreLoad=false; }] from thread [http-nio-8080-exec-5]
+09:36:19,323 [DEBUG] HibernateTransactionManager.doCleanupAfterCompletion:680 - Closing Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[ru.kle10wka.table.Book#1], EntityKey[ru.kle10wka.table.Book#2], EntityKey[ru.kle10wka.table.Book#3]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] after transaction
+09:36:19,324 [INFO] StatisticalLoggingSessionEventListener.end:258 - Session Metrics {
+    101514 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    467075 nanoseconds spent preparing 1 JDBC statements;
+    19485407 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6865260 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 0 collections);
+    10265 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+09:36:19,325 [TRACE] ServletInvocableHandlerMethod.invokeForRequest:135 - Method [ru.kle10wka.controller.ControllerMain.allList] returned [books]
+09:36:19,327 [DEBUG] DispatcherServlet.render:1276 - Rendering view [org.springframework.web.servlet.view.JstlView: name 'books'; URL [/WEB-INF/books.jsp]] in DispatcherServlet with name 'mvc'
+09:36:19,328 [TRACE] JstlView.render:297 - Rendering view with name 'books' with model {books=[Book [ id= 1, name= Bible, pages= 666, genre= Fairytale, Book [ id= 2, name= Java Book, pages= 1488, genre= Horror, Book [ id= 3, name= Constitution of Ukraine, pages= 228, genre= Fantasy]} and static attributes {}
+09:36:19,328 [DEBUG] JstlView.exposeModelAsRequestAttributes:432 - Added model object 'books' of type [java.util.ArrayList] to request in view with name 'books'
+09:36:19,329 [DEBUG] JstlView.renderMergedOutputModel:166 - Forwarding to resource [/WEB-INF/books.jsp] in InternalResourceView 'books'
+09:36:19,341 [TRACE] DispatcherServlet.resetContextHolders:1062 - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@5c8fce
+09:36:19,342 [DEBUG] DispatcherServlet.processRequest:1000 - Successfully completed request
+09:36:19,343 [TRACE] XmlWebApplicationContext.publishEvent:363 - Publishing event in WebApplicationContext for namespace 'mvc-servlet': ServletRequestHandledEvent: url=[/SpringMVC_Hibernate/books]; client=[0:0:0:0:0:0:0:1]; method=[GET]; servlet=[mvc]; session=[BA9930F1AE43ABC9B7B31EEE6387CB96]; user=[null]; time=[159ms]; status=[OK]
